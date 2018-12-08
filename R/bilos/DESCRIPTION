@@ -1,11 +1,10 @@
 Package: bilos
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Make prediction on time series
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Gameli AMEDON
+Maintainer: The package maintainer <joelamedon@yahoo.fr>
+Description: This package provides some useful functions to deal with time series predictions
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
