@@ -9,3 +9,6 @@ License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Depends: readxl
+NeedsCompilation: no
+Packaged: 2018-12-10 20:24:12 UTC; Gameli.Amedon
+Built: R 3.5.1; ; 2018-12-10 20:24:15 UTC; windows

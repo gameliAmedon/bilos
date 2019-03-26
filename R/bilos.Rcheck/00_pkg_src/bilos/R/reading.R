@@ -1,4 +1,4 @@
-#' This function's aim is to be the reading toolkit for all format files
+#' This function's aim is the reading toolkit for all format files
 #'
 #' @import data.table
 #' @import dplyr

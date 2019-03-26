@@ -1,0 +1,79 @@
+---
+title: "Interactive charts with Highcharter"
+author: 
+date: "`r Sys.Date()`"
+output:
+  revealjs::revealjs_presentation:
+    theme: solarized
+    highlight: pygments
+    center: true
+---
+
+# Champoupou champipi
+
+## Maman Naka
+
+## Words...
+```{r packages, include = FALSE, warning = FALSE}
+library(dplyr)
+library(DT)
+library(tidyr)
+library(highcharter)
+```
+
+```{r words, echo=FALSE, message = FALSE, warning = FALSE}
+data(diamonds, economics_long, mpg, package = "ggplot2")
+library(dplyr)
+DT::datatable(mpg[1:10,1:5])
+``` 
+
+## Papa Joel
+```{r data, echo=FALSE, message = FALSE, warning = FALSE}
+library(highcharter)
+mpgman2 <- mpg %>% 
+  count(class, year)
+# %>% 
+#   glimpse()
+dtemp <- structure(list(month = c("Jan", "Feb", "Mar", "Apr", 
+                                  "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"), 
+                        tokyo = c(7, 6.9, 9.5, 14.5, 18.2, 21.5, 
+                                  25.2, 26.5, 23.3, 18.3, 13.9, 9.6), 
+                        new_york = c(-0.2, 0.8, 5.7, 11.3, 17, 22, 
+                                     24.8, 24.1, 20.1, 14.1, 8.6, 2.5), 
+                        berlin = c(-0.9, 0.6, 3.5, 8.4, 13.5, 17, 
+                                   18.6, 17.9, 14.3, 9, 3.9, 1), 
+                        london = c(3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 
+                                   17, 16.6, 14.2, 10.3, 6.6, 4.8)), 
+                   .Names = c("month", "tokyo", "new_york", "berlin", "london"), 
+                   row.names = c(NA, 12L), 
+                   class = c("tbl_df", "tbl", "data.frame"))
+```
+
+```{r picture, echo=FALSE, message = FALSE, warning = FALSE}    
+#hchart(mpg, "scatter", hcaes(x = displ, y = hwy, group = class))
+``` 
+
+# Je vous aime
+
+## Je m'appelle Ryan Eduwodji Kodjo
+
+Highcharts is a charting library:
+
+* written in pure JavaScript
+* offering an easy way of adding interactive charts to web site/application
+* supports line, spline, area, areaspline, column, bar, pie, scatter, angular gauges, arearange, areasplinerange, columnrange, bubble, box plot, error bars, funnel, waterfall and polar chart types.
+
+https://www.highcharts.com/
+
+Warning: a license is needed to use Highcharts
+
+# Bisous
+
+## Bisous
+
+Highcharter is a R wrapper for Highcharts javascript libray and its modules.  
+It allows to reproduce all Highcharts interactive charts with R.
+
+Warning: 'Highcharts (www.highcharts.com) is a Highsoft software product which is not free for commercial and Governmental use'
+
+## Moua
